@@ -38,12 +38,12 @@ import HomeScreen from '../screens/CategoryDrawer/TopTabs/Home';
 import RepairsScreen from '../screens/CategoryDrawer/TopTabs/Repairs';
 import WellnessScreen from '../screens/CategoryDrawer/TopTabs/WellNess';
 
-import ApplicationInstallationScreen from '../screens/CategoryDrawer/Home_Improvement/ApplianceInstallationScreen';
-import ServiceProviders from '../screens/CategoryDrawer/Home_Improvement/ServiceProviders';
-import ServiceProviderProfile from '../screens/CategoryDrawer/Home_Improvement/ServiceProviderProfile';
-import ConfirmRequestScreen from '../screens/CategoryDrawer/Home_Improvement/ConfirmServiceRequest';
-import ProjectDetailsScreen from '../screens/CategoryDrawer/Home_Improvement/ProjectDetails';
-import AddPhotosScreen from '../screens/CategoryDrawer/Home_Improvement/AddPhotos';
+import ApplicationInstallationScreen from '../screens/CategoryDrawer/SharedScreens/ApplianceInstallationScreen';
+import ServiceProviders from '../screens/CategoryDrawer/SharedScreens/ServiceProviders';
+import ServiceProviderProfile from '../screens/CategoryDrawer/SharedScreens/ServiceProviderProfile';
+import ConfirmRequestScreen from '../screens/CategoryDrawer/SharedScreens/ConfirmServiceRequest';
+import ProjectDetailsScreen from '../screens/CategoryDrawer/SharedScreens/ProjectDetails';
+import AddPhotosScreen from '../screens/CategoryDrawer/SharedScreens/AddPhotos';
 
 
 const Drawer = createDrawerNavigator();

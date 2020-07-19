@@ -22,9 +22,62 @@ const Explore_Category = [
       image: require('../assets/home_improvement.jpg'),
       name: 'Home Improvement',
       location: '2562 Pro near you',
-    },
+    }
   ];
+
+  const WellNessCategory = [
+    {
+      id: 1,
+      image: require('../assets/wellness.jpg'),
+      name: 'Home Improvement',
+      location: '2562 Pro near you',
+    },
+    {
+      id: 2,
+      image: require('../assets/wellness.jpg'),
+      name: 'WellNess',
+      location: '2562 Pro near you',
+    },
+    {
+      id: 3,
+      image: require('../assets/wellness.jpg'),
+      name: 'WellNess',
+      location: '2562 Pro near you',
+    },
+    {
+      id: 4,
+      image: require('../assets/wellness.jpg'),
+      name: 'WellNess',
+      location: '2562 Pro near you',
+    }
+  ]
   
+  const RepairsCategory = [
+    {
+      id: 1,
+      image: require('../assets/repairs.jpg'),
+      name: 'Repairs',
+      location: '2562 Pro near you',
+    },
+    {
+      id: 2,
+      image: require('../assets/repairs.jpg'),
+      name: 'Repairs',
+      location: '2562 Pro near you',
+    },
+    {
+      id: 3,
+      image: require('../assets/repairs.jpg'),
+      name: 'Repairs',
+      location: '2562 Pro near you',
+    },
+    {
+      id: 4,
+      image: require('../assets/repairs.jpg'),
+      name: 'Repairs',
+      location: '2562 Pro near you',
+    }
+  ]
   const Starting_Business = [
     {
       id: 1,
@@ -90,5 +143,5 @@ const Explore_Category = [
     },
   ]
   
-  export { Explore_Category, Starting_Business, Planning_Party,  Service_Providers };
+  export { Explore_Category, Starting_Business, Planning_Party,  Service_Providers,WellNessCategory ,RepairsCategory};
   
