@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import {
   Text,
   View,
@@ -14,13 +14,18 @@ import FontSizes from '../../../constants/FontSizes';
 import { Explore_Category } from '../../../data/data';
 import { ExploreCard } from '../../../components/Elements/Card';
 import { ScrollView, TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { set } from 'react-native-reanimated';
 
 export default function HomeScreen({navigation}) {
 
-  const onCardItemPressed = (title) => {
-    console.log(title)
-    navigation.navigate('Application Installation', { title:title})
+    const [data, setData] = useState()
+
+  const onCardItemPressed = (id) => {
+     setData(Explore_Category.filter((item) => item.id === id)[0]);
+     navigation.navigate('Application Installation', { data })
   }
+
+  console.log(data)
   return (
     <Fragment>
       <View style={styles.container}>
@@ -49,7 +54,7 @@ export default function HomeScreen({navigation}) {
             paddingHorizontal: 4,
           }}>
           {Explore_Category.map((items) => (
-            <TouchableWithoutFeedback key={items.id} onPress={() => onCardItemPressed(items.name)}>
+            <TouchableWithoutFeedback key={items.id} onPress={() => onCardItemPressed(items.id)}>
             <ExploreCard
               style={{
                 height: Layout.window.height * 0.26,

@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Platform } from 'react-native';
 import {NavigationContainer} from "@react-navigation/native";
 import useCachedResources from './hooks/useCachedResources';
 import DrawerNavigator from './navigation/DrawerNavigator';
+import AuthStack from './navigation/AuthStack';
 
 export default function App() {
 
@@ -17,7 +18,8 @@ export default function App() {
    <Fragment>
         {Platform.OS === 'ios' && <StatusBar style="auto" /> }
        <NavigationContainer>
-         <DrawerNavigator />
+          <AuthStack />
+         {/* <DrawerNavigator /> */}
        </NavigationContainer>
    </Fragment>
    
