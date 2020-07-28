@@ -4,6 +4,7 @@ import Animated from 'react-native-reanimated';
 import propTypes from 'prop-types';
 import FontSizes from '../constants/FontSizes';
 import Button from './Elements/Button';
+import Layout from '../constants/Layout';
 
 const SubSlideComponent = ({ subtitle, description, last, onPress }) => {
   return (
@@ -29,11 +30,12 @@ SubSlideComponent.prototypes = {
   onPress: () => proptypes.void(),
 };
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  container: {  
+    flex:1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 44,
+ 
   },
   subtitle: {
     fontFamily: 'bold',
