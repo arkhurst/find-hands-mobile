@@ -4,7 +4,7 @@ import proptypes from 'prop-types';
 import { RectButton } from 'react-native-gesture-handler';
 import FontSizes from '../../constants/FontSizes';
 
-const Button = ({ variant, label, onPress }) => {
+const Button = ({ variant, label, onPress, children }) => {
   const backgroundColor =
     variant === 'primary'
       ? '#2CB9B0'
@@ -22,7 +22,13 @@ const Button = ({ variant, label, onPress }) => {
       <RectButton
         style={[styles.container, { backgroundColor }]}
         {...{ onPress }}>
-        <Text style={[styles.label, { color }]}>{label}</Text>
+        {children ? (
+          children
+        ) : (
+          <>
+            <Text style={[styles.label, { color }]}>{label}</Text>
+          </>
+        )}
       </RectButton>
     </Fragment>
   );
