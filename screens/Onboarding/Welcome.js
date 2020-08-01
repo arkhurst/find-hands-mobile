@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
-import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground , StatusBar} from 'react-native';
 import Constants from 'expo-constants';
 import Button from '../../components/Elements/Button';
 import img from '../../assets/construction.jpg';
 import FontSizes from '../../constants/FontSizes';
 import Colors from '../../constants/Colors';
 
-const Welcome = () => {
+
+const Welcome = ({ navigation : {navigate}}) => {
+    StatusBar.setBarStyle('light-content')
   return (
     <Fragment>
       <View style={styles.container}>
@@ -25,7 +27,7 @@ const Welcome = () => {
             Login or Sign up for an amazing experience
           </Text>
           <View style={{ paddingBottom: 20 }}>
-            <Button variant={'primary'} label={'Have an account? Login'} />
+            <Button onPress={() => navigate("Login")} variant={'primary'} label={'Have an account? Login'} />
           </View>
 
           <Button variant={'primary'} label={"Join us, it's free "} />
