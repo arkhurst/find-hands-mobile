@@ -6,8 +6,17 @@ import FontSizes from '../../constants/FontSizes';
 
 const Button = ({ variant, label, onPress }) => {
   const backgroundColor =
-    variant === 'primary' ? '#2CB9B0' : 'rgba(12,13,52,0.05)';
-  const color = variant === 'primary' ? 'white' : '#0C0D34';
+    variant === 'primary'
+      ? '#2CB9B0'
+      : variant === 'transparent'
+      ? 'transparent'
+      : 'rgba(12,13,52,0.05)';
+  const color =
+    variant === 'primary'
+      ? 'white'
+      : variant === 'transparent'
+      ? '#fff'
+      : '#0C0D34';
   return (
     <Fragment>
       <RectButton
@@ -30,7 +39,7 @@ Button.prototypes = {
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 25,
+    borderRadius: 5,
     height: 50,
     width: 245,
     justifyContent: 'center',
