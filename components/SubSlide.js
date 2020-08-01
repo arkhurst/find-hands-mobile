@@ -15,7 +15,7 @@ const SubSlideComponent = ({ subtitle, description, last, onPress }) => {
         <Button
           label={last ? "Let's get started" : 'Next'}
           variant={last ? 'primary' : 'default'}
-          {...{ onPress }}
+          {...{ onPress }} 
         />
       </View>
     </Fragment>
@@ -30,12 +30,12 @@ SubSlideComponent.prototypes = {
   onPress: () => proptypes.void(),
 };
 const styles = StyleSheet.create({
-  container: {  
-    flex:1,
+  container: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 44,
- 
+    paddingTop: 40,
+    paddingHorizontal: 30,
   },
   subtitle: {
     fontFamily: 'bold',
