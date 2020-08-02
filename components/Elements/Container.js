@@ -12,11 +12,11 @@ export default function Container({ children, footer }) {
         style={{
           flex: 1,
           backgroundColor: '#110b4f',
-          paddingTop: Constant.statusBarHeight,
+       
         }}>
         <View
           style={{
-            ...StyleSheet.absoluteFillObject,
+            paddingTop:10,
             borderBottomLeftRadius: 60,
             backgroundColor: Colors.white,
             borderBottomRightRadius: 60,
@@ -24,7 +24,7 @@ export default function Container({ children, footer }) {
           }}>
           {children}
         </View>
-        <View style={{ paddingTop: Layout.window.height / 1.33 }}>
+        <View style={{ paddingTop: 30,    }}>
           {footer}
         </View>
       </View>

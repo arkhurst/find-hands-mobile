@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { View, Text, StyleSheet, ImageBackground , StatusBar} from 'react-native';
+import { View, Text, StyleSheet, ImageBackground , StatusBar, } from 'react-native';
 import Constants from 'expo-constants';
 import Button from '../../components/Elements/Button';
 import img from '../../assets/construction.jpg';
